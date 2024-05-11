@@ -48,13 +48,13 @@ Here I provide two ways to install fltk.
 
 ### Use vcpkg
 
-Edit `CMakeLists.txt`, add a line `run_vcpkg()` between `include(fetch_project_options)` and `project(cpp_starter LANGUAGES CXX)`. That is:
+Edit `CMakeLists.txt`, add a line `run_vcpkg()` between `include(cpp_novice_fetch_project_options)` and `project(cpp_starter LANGUAGES CXX)`. That is:
 
 ```cmake
 cmake_minimum_required(VERSION 3.25)
 
 list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake")
-include(fetch_project_options)
+include(cpp_novice_fetch_project_options)
 
 run_vcpkg()
 project(cpp_starter LANGUAGES CXX)
@@ -65,7 +65,7 @@ Reopen your IDE. Then if you're lucky, the installation should have happened aut
 ### Use conan
 
 1. Install conan 2 somehow.
-2. [Similarly](#use-vcpkg), add `run_conan()` between `include(fetch_project_options)` and `project(cpp_starter LANGUAGES CXX)`.
+2. [Similarly](#use-vcpkg), add `run_conan()` between `include(cpp_novice_fetch_project_options)` and `project(cpp_starter LANGUAGES CXX)`.
 3. Reopen your IDE.
 
 If you're lucky, the installation should have happened automatically.
