@@ -32,7 +32,7 @@ In this template, you can simply add a program by:
 2. add `add_code(<program_name> <source_file1> [source_file2...])` (for example, `add_code(example_single src/example_single/main.cpp)`).
 3. Reconfigure the project by using some button or reopening the IDE.
 
-The headers used in book is configured correctly by default, just do the `add_code` step, then you can `#include "std_lib_facilities.h"` freely.
+The headers used in the book are configured correctly by default, just do the `add_code` step, then you can `#include "std_lib_facilities.h"` freely.
 
 **It's highly recommended to put your code inside `src` folder.**
 
